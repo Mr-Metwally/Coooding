@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long
+
+
+vector<ll>divisors(ll n)
+{
+    vector<ll>ret;
+    for(int i=1;i<=n;i++)
+    {
+        if(n%i == 0) ret.push_back(i);
+    }
+    return ret;
+}
+int main() 
+{
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    vector<ll>v = divisors(16);
+    for(auto it:v) cout<<it<<' ';
+    return 0;
+}
+
+
+
+
+
