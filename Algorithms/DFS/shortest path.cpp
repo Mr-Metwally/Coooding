@@ -2,7 +2,7 @@
 using namespace std;
 #define ll long long
 
-// count how many elements are >= 5 in a graph using {dfs}
+// With DFS it will TLE
 
 const int N=1e3+5; 
 
