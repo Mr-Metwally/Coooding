@@ -12,12 +12,22 @@ int main()
     while(t--)
     {
         ll x,y;
-        cin>>x>>y;
+        cin>>y>>x;
 
-        int z=max(x,y);
-        int l=min(x,y);
+        ll z=max(x,y);
+        ll z2=(z-1)*(z-1), ans;
 
-        cout<<pow(z,2)-l+1<<'\n';
+        if(z%2)
+        {
+            if(y==z) ans=z2+x;
+            else ans= z2+2*z-y;
+        }
+        else
+        {
+            if(z==x) ans=z2+y;
+            else ans=z2+2*z-x;
+        }
+        cout<<ans<<'\n';
     }
 
     return 0;
