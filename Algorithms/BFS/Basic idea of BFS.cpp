@@ -39,7 +39,7 @@ int main()
         int a,b;
         cin>>a>>b;
         adj[a].push_back(b);
-        adj[b].push_back(a);
+        adj[b].push_back(a); // Because it's an undirected graph.
     }
     cout<<BFS(1,2);
     
