@@ -1,3 +1,5 @@
+// This is about counting the number of connected components of the same character over a grid full of different characters.
+
 #include<bits/stdc++.h>
 using namespace std;
 #define ll long long
